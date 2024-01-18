@@ -13,30 +13,26 @@ body{
     padding: 20px;
 }
 
-nav{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-desctop{
-    display:none;
-}
 
 .burger {
     margin-top: 5px;
     cursor: pointer;
 }
 
+.header-desctop{
+    display:none;
+}
 
 a{
     text-decoration: none;
 }
 
 .header{
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 3px;
+    height: 25px;
 }
 
 .logo-box{
@@ -48,23 +44,47 @@ a{
     width: 100%;
 }
 
-.mobile-nav{
-    display: none;
+.mobile-nav {
+    position: relative;
+    z-index: 1;
+    top: 1410%;
+    left: 15px;
+    transition: all 0.3s ease;
+    width: 106%;
+    background: #5e5454d6;
+    height: 100vh;
+    text-align: center;
+    display: none
 }
 
 .mobile-nav *{
-    margin: -3px 10px 0 10px;
-    color: #7287d3;
-    font-size: 17px;
+    margin-top: 25px;
+    color: #eff0f4;
+    font-size: 16px;
+    width: 20px;
+    display: block;
+    margin-left: 30%;
+    text-align: center;
+    margin-left: 32%;
+    text-align: center;
 }
 
+
 .signup{
+    font-size: 10px;
     background: #7287d3;
     color: white;
     border: none;
     padding: 5px;
     cursor: pointer;
     margin-left: 5px
+}
+
+.list-btn {
+    display: block;
+    cursor: pointer;
+    width: 100px;
+    background: none;
 }
 
 .signup:hover{
@@ -85,6 +105,7 @@ a{
     margin-left: 5px;
     font-size: 10px
 }
+
 .btn-desktop-box{
     display: none;
 }
@@ -286,15 +307,20 @@ a{
         width: 100%;
     }
 
-    .mobile-nav{
+    .mobile-nav {
         display: flex;
+        justify-content: space-between;
+        background: none;
+        margin-top: -705px;
+        width: 400px;
     }
 
-    .mobile-nav *{
-       margin: -7px 30px 0 14px;
+    .mobile-nav * {
+        margin: -11px 9px;
         color: #7287d3;
         font-size: 14px;
-        width: 41px;
+        width: 82px;
+
     }
 
     .signup{

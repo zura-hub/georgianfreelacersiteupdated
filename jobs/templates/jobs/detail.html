@@ -7,86 +7,115 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="landing page web pages, jobs">
+    <meta name="keywords" content="landing page web pages, jobs, carier,  jobs seekers, themes, tmeplates ">
+    <meta name="author" content="Thnik">
+
+    <!-- Add Open Graph and Twitter Card meta tags for better social media sharing -->
+    <meta property="og:title" content="landing page web pages, jobs, carier,  jobs seekers, themes, tmeplates">
+    <meta property="og:description" content="landing page web pages, jobs, carier,  jobs seekers, themes, tmeplates.">
+    <meta property="og:image" content="">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="{% static 'jobs/css/jobs.css' %} ">
     <title>Details page</title>
 </head>
 <body>
     <div class="container">
         <div class="container">
-         <div class="container-inner">
-            <div class="header">
-            <!-- logo-->
-                <div class="logo-box">
-                     <a href="{% url 'home' %}">
-                        <img src="{% static 'main/images/logo.png' %} "  class="logo" alt="">
-                     </a>
-                </div>
-
-            <!--Navigation bar -->
-                <nav class="mobile-nav">
-                    <a href="{% url 'home' %}" class="home_text">
-                        Home
-                    </a>
-
-                    <a href="{% url 'jobs' %}" class="jobs_text">
-                        Jobs
-                    </a>
-                </nav>
-
-
-
-                {% if request.user.is_authenticated %}
-                     <div class="logged-user">
-                          <span>Hello</span><p class="hello-user">{{ user }}</p>
-
-                         <a href=" {% url 'accounts' %}  ">
-                             <button class="btn-user">Main Page</button>
+            <div class="container-inner">
+                <div class="header">
+                <!-- logo-->
+                    <div class="logo-box">
+                         <a href="{% url 'home' %}">
+                            <img src="{% static 'main/images/logo.png' %} "  class="logo" alt="">
                          </a>
-
-                         <form class="logout" method="post" action="logout">
-                            {% csrf_token %}
-                            <button class="out" type="submit">Logout</button>
-                         </form>
-
-                         <a href="{% url 'jobs' %}" >
-                            <button class="out" type="submit">Jobs</button>
-                         </a>
-                     </div>
-
-                 {% else %}
-
-
-            <!--Btn Mobile-->
-
-                <div class="btn-desktop-box">
-
-                        <a href="{% url 'login' %}">
-                            <button class="signup" type="submit">Log In</button>
+                    </div>
+    
+                <!--Navigation bar -->
+                    <nav class="mobile-nav">
+                        <a href="{% url 'home' %}" class="list">
+                            Home
                         </a>
-
-                        <a href="{% url 'sign_up' %}">
-                            <button onmouseover="show()" class="signup" type="submit">Sign Up</button>
+    
+                        <a href="{% url 'jobs' %}" class="list">
+                            Jobs
                         </a>
-
-
-
-                </div>
-
-                {% endif %}
-
-                <form class='search' action="{% url 'search' %}" method="post">
-                    {% csrf_token %}
-                    <input class="search-input"  type="text" name="search" placeholder="Search...">
-                    <button class="searchbtn" type="submit">Search</button>
-                </form>
-
-
-            <!--Btn Mobile-->
-                <div class="btn-mobile-box">
-                    <h2 class="burger">︾</h2>
+    
+                        <a href="{% url 'templates' %}" class="list">
+                            Templates
+                        </a>
+    
+                        <a href="{% url 'FreelanerGeorgia:freelancer_list' %}" class="list">
+                            Freenalcers
+                        </a>
+    
+                        <a href="{% url 'create' %}">
+                            Create
+                        </a>
+    
+    
+                        {% if not request.user.is_authenticated %}
+                          <div class="omg-btn">
+                                <a href="{% url 'login' %}">
+                                <button class="list-btn" type="submit">Log In</button>
+                                </a>
+                                <a href="{% url 'sign_up' %}">
+                                    <button id="sign" class="list-btn" type="submit">Sign Up</button>
+                                </a>
+                          </div>
+                        {% endif %}
+                        <!-- Other navigation items -->
+    
+    
+                    </nav>
+    
+    
+    
+                    {% if request.user.is_authenticated %}
+                         <div class="logged-user">
+                              <span>Hello</span><p class="hello-user">{{ user }}</p>
+    
+                             <a href=" {% url 'FreelanerGeorgia:freelancer_create' %}  ">
+                                 <button class="btn-user">Main Page</button>
+                             </a>
+    
+                             <form class="logout" method="post" action="{% url 'logout' %}">
+                                {% csrf_token %}
+                                <button class="out" type="submit">Logout</button>
+                             </form>
+    
+    <!--                         <a href="{% url 'jobs' %}" >-->
+    <!--                            <button class="out" id="jobs" type="submit">Jobs</button>-->
+    <!--                         </a>-->
+                         </div>
+    
+                     {% else %}
+    
+    
+                <!--Btn Mobile-->
+    
+                    <div class="btn-desktop-box">
+    
+    
+    
+                    </div>
+    
+                    {% endif %}
+    
+                    <form class='search' action="{% url 'search' %}" method="post">
+                        {% csrf_token %}
+                        <input class="search-input"  type="text" name="search" placeholder="Search...">
+                        <button class="searchbtn" type="submit">Search</button>
+                    </form>
+    
+    
+    
+                <!--Btn Mobile-->
+                    <div class="btn-mobile-box">
+                        <h2 class="burger">︾</h2>
+                    </div>
                 </div>
             </div>
-        </div> </div>
 
         <div class="detail-view">
             {% csrf_token %}

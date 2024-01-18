@@ -1,21 +1,21 @@
-body{
-   overflow-x: none;
-   overflow-y: none;
+body {
+    overflow-x: none;
+    overflow-y: none;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     padding: 20px;
 }
 
 
-nav{
-    display:flex;
+nav {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -27,19 +27,19 @@ nav{
 }
 
 
-a{
+a {
     text-decoration: none;
 }
 
-.header{
+.header {
     display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 3px;
-  height: 25px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3px;
+    height: 25px;
 }
 
-.logo-box{
+.logo-box {
     width: 100px;
 
 }
@@ -49,35 +49,36 @@ a{
 }
 
 .mobile-nav {
-  position: relative;
-  z-index: 1;
-  top: 1410%;
-  left: 15px;
-  transition: all 0.3s ease;
-  width: 106%;
-  background: #5e5454d6;
-  height: 100vh;
-  text-align: center;
-  display:none
+    position: relative;
+    z-index: 1;
+    top: 1410%;
+    left: 15px;
+    transition: all 0.3s ease;
+    width: 106%;
+    background: #5e5454d6;
+    height: 100vh;
+    text-align: center;
+    display: none
 }
 
 
-.mobile-nav *{
-        margin-top: 25px;
-      color: #eff0f4;
-      font-size: 16px;
-      width: 20px;
-      display: block;
-      margin-left: 30% text-align:center;
-      margin-left: 32%;
-      text-align: center;
+.mobile-nav * {
+    margin-top: 25px;
+    color: #eff0f4;
+    font-size: 16px;
+    width: 20px;
+    display: block;
+    margin-left: 30%;
+    text-align: center;
+    margin-left: 32%;
+    text-align: center;
 }
 
-.list{
-    display:block;
+.list {
+    display: block;
 }
 
-.signup{
+.signup {
     font-size: 10px;
     background: #7287d3;
     color: white;
@@ -87,26 +88,26 @@ a{
     margin-left: 5px
 }
 
-.sumbit_btn{
-    display:flex;
+.sumbit_btn {
+    display: flex;
     float: left;
 }
 
-.go_back{
+.go_back {
     font-weight: 900;
-    color:#7287d3;
+    color: #7287d3;
 }
 
-.signup:hover{
+.signup:hover {
     background: #7399d3;
 
 }
 
-.employer-employee{
-  display: none;
+.employer-employee {
+    display: none;
 }
 
-.employer{
+.employer {
     background: #7287d3;
     color: white;
     border: none;
@@ -116,15 +117,15 @@ a{
     font-size: 10px
 }
 
-.btn-desktop-box{
+.btn-desktop-box {
     display: none;
 }
 
-.logged-user{
+.logged-user {
     display: flex;
 }
 
-.btn-user{
+.btn-user {
     background: #7287d3;
     color: white;
     border: none;
@@ -134,14 +135,14 @@ a{
     margin-top: -5px
 }
 
-.list-btn{
-    display:block;
+.list-btn {
+    display: block;
     cursor: pointer;
     width: 100px;
     background: none;
 }
 
-.out{
+.out {
     background: #7287d3;
     color: white;
     border: none;
@@ -151,19 +152,19 @@ a{
     margin-top: -5px
 }
 
-.job-header-text{
+.job-header-text {
     color: #7287d3;
     text-align: center;
     margin-top: 30px;
 }
 
-.inpt{
+.inpt {
     margin: 20px;
     width: 100%;
     height: 40px;
 }
 
-.sign-in-form{
+.sign-in-form {
     display: block;
     margin: auto;
     width: 600px
@@ -171,97 +172,98 @@ a{
 
 
 
-.btn-submit{
+.btn-submit {
     width: 100%;
     margin-left: 20px;
     height: 40px;
     cursor: pointer;
 }
 
-.hello-user{
+.hello-user {
     display: inline;
 
     text-transform: uppercase;
     margin: 0px 15px 0px 10px;
 }
 
-.logged-user > span{
+.logged-user>span {
     font-size: 10px;
 }
 
-.temp_card{
+.temp_card {
     width: 360px;
-    margin:20px;
-    display:block;
-    margin:auto;
+    margin: 20px;
+    display: block;
+    margin: auto;
 }
 
-.temp_card_inner{
-    width:100%;
-    margin:20px;
+.temp_card_inner {
+    width: 100%;
+    margin: 20px;
 }
 
-.temp_card > ul{
-    list-style:none;
+.temp_card>ul {
+    list-style: none;
 }
 
 
-.add_temp{
+.add_temp {
     background: #7287d3;
-    height:40px;
+    height: 40px;
     border: none;
     color: white;
     font-weight: 700;
     text-align: center;
-    cursor:pointer;
-    width:100px;
+    cursor: pointer;
+    width: 100px;
     margin-left: -50px;
     margin-top: 30px;
 }
 
 .carousel {
-  width: 100%;
-  height: 572px; /* Adjust height as needed */
-  overflow: hidden;
+    width: 100%;
+    height: 572px;
+    /* Adjust height as needed */
+    overflow: hidden;
 }
 
 .carousel-inner {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  transition: transform 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
 }
 
 .carousel-item {
-  flex-shrink: 0;
-  width: 100%;
+    flex-shrink: 0;
+    width: 100%;
 }
 
 .carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: #fff;
-  font-size: 24px;
-  opacity: 0.7;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    opacity: 0.7;
 }
 
-.main-conteiner{
+.main-conteiner {
     position: absolute;
     top: 130px;
     left: 30px;
@@ -269,17 +271,17 @@ a{
     line-height: 30px;
 }
 
-.account-inner{
-    display:flex;
+.account-inner {
+    display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.space{
-    margin-bottom:35px;
+.space {
+    margin-bottom: 35px;
 }
 
-.addBtn{
+.addBtn {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -289,13 +291,14 @@ a{
     margin: 30px 15px;
     color: white;
 }
-.search{
+
+.search {
     width: 100px;
     margin-left: -10px;
     display: none;
 }
 
-.searchbtn{
+.searchbtn {
     background: #7287d3;
     color: white;
     border: none;
@@ -305,17 +308,17 @@ a{
     display: none;
 }
 
-.search-input{
+.search-input {
     width: 100%;
     display: none;
 }
 
-.account-inner{
-     display:block;
-     margin: auto;
+.account-inner {
+    display: block;
+    margin: auto;
 }
 
-.freelancer_main{
+.freelancer_main {
     margin-top: 10px;
 
 }
@@ -326,52 +329,52 @@ a{
 
 }
 
-.bottom_border{
+.bottom_border {
     border-bottom: 2px solid #7287d3;
     padding-bottom: 15px;
 }
 
-.cover_img{
+.cover_img {
     height: 150px;
     width: 150px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.freelancer_header{
+.freelancer_header {
     text-align: center;
     color: #7287d3;
 }
 
-.logged-user > span{
+.logged-user>span {
     color: #7399d3;
     font-size: 10px;
 }
 
-.hello-user{
+.hello-user {
     color: #7399d3;
     font-size: 10px;
 }
 
-.cover_img{
+.cover_img {
     object-fit: cover;
 }
 
-.logged-user > span{
+.logged-user>span {
     font-size: 18px;
 }
 
-.hello-user{
+.hello-user {
     font-size: 18px;
 }
 
 @media screen and (min-width: 768px) {
-    .cover_img{
+    .cover_img {
         object-fit: cover;
     }
 
     .container-temp {
-         display: grid;
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
@@ -380,10 +383,10 @@ a{
         padding: 5px;
     }
 
-    .cover{
-        width:300px;
-        height:300px;
-        object-fit:cover;
+    .cover {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
     }
 
     .temp_card_inner {
@@ -400,25 +403,25 @@ a{
     }
 
 
-     .cover{
-        display:block;
+    .cover {
+        display: block;
     }
 
-    .account-inner{
-        display:flex;
+    .account-inner {
+        display: flex;
         justify-content: space-between;
         width: 100%;
         margin-top: 150px;
     }
 
-    .search{
+    .search {
         width: 250px;
         margin-left: -10px;
-        display:flex;
+        display: flex;
     }
 
-    .logo-box{
-       width: 150px;
+    .logo-box {
+        width: 150px;
 
     }
 
@@ -426,7 +429,7 @@ a{
         width: 100%;
     }
 
-    .searchbtn{
+    .searchbtn {
         background: #7287d3;
         color: white;
         border: none;
@@ -436,15 +439,15 @@ a{
         display: flex;
     }
 
-    .search-input{
+    .search-input {
         width: 120px;
         display: flex;
     }
 
-     .main{
-        display:flex;
+    .main {
+        display: flex;
         justify-content: space-between;
-     }
+    }
 
 }
 
@@ -455,7 +458,7 @@ a{
     }
 
 
-    .logo-box{
+    .logo-box {
         width: 200px;
 
     }
@@ -487,7 +490,7 @@ a{
         width: 100%;
     }
 
-    .mobile-nav{
+    .mobile-nav {
         display: flex;
         justify-content: space-between;
         background: none;
@@ -495,7 +498,7 @@ a{
         width: 400px;
     }
 
-    .mobile-nav *{
+    .mobile-nav * {
         margin: -11px 9px;
         color: #7287d3;
         font-size: 14px;
@@ -503,28 +506,29 @@ a{
 
     }
 
-     .omg-btn {
+    .omg-btn {
         display: flex;
         margin-top: 10px;
         margin-left: 81px;
-      }
+    }
 
-    .list-btn{
+    .list-btn {
         border: none;
-        font-size: 15px;
-        margin-left: -22px;
+        font-size: 14px;
+        margin-left: -63px;
         background: #7287d3;
         color: white;
         height: 20px;
         padding: -1px;
+        width: 43px;
     }
 
-    #sign{
-        margin-left: -35px;
+    #sign {
+        margin-left: -53px;
     }
 
 
-    .signup{
+    .signup {
         background: #7287d3;
         color: white;
         border: none;
@@ -534,61 +538,61 @@ a{
         cursor: pointer;
     }
 
-    .signup:hover{
+    .signup:hover {
         background: #7399d3;
 
     }
 
-    .btn-desktop-box{
+    .btn-desktop-box {
         display: flex;
     }
 
-    .cover_img{
+    .cover_img {
         object-fit: cover;
     }
 
     .logged-user {
-      display: flex;
-      width: 300px;
-      margin-left: 12px;
+        display: flex;
+        width: 300px;
+        margin-left: 12px;
     }
 
-    .hello-user{
+    .hello-user {
         margin-right: 117px;
     }
 
-    .main{
-        display:flex;
+    .main {
+        display: flex;
         justify-content: space-between;
     }
 
-    .carousel{
+    .carousel {
         height: 670px;
     }
 
-    .logged-user > span {
+    .logged-user>span {
         font-size: 18px;
         margin-right: 21px;
     }
 
     .btn-user {
-         background: #7287d3;
-          color: white;
-          border: none;
-          padding: 5px;
-          cursor: pointer;
-          margin-left: -75px;
-          margin-top: -5px;
+        background: #7287d3;
+        color: white;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+        margin-left: -75px;
+        margin-top: -5px;
     }
 
     .btn-user {
-      background: #7287d3;
-      color: white;
-      border: none;
-      padding: 5px;
-      cursor: pointer;
-      margin-left: -108px;
-      margin-top: -5px;
+        background: #7287d3;
+        color: white;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+        margin-left: -108px;
+        margin-top: -5px;
     }
 
 }
